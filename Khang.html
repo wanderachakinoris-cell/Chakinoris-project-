@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty of Science and Technology - MRU</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f5f7fa;
+      color: #222;
+    }
+
+    /* Navigation bar */
+    nav {
+      background: linear-gradient(to right, #0056b3, #007bff);
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: yellow;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 100px;
+      background: #fff;
+      border-right: 2px solid #ddd;
+      padding: 20px;
+      position: fixed;
+      top: 60px;
+      bottom: 50px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    .sidebar h3 {
+      margin-bottom: 15px;
+      color: #0056b3;
+    }
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin: 12px 0;
+      padding: 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .sidebar ul li:hover {
+      background: #f0f8ff;
+      color: #0056b3;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 250px;
+      padding: 25px;
+    }
+    .main h1 {
+      color: #0056b3;
+    }
+    .main h2 {
+      color: #007bff;
+    }
+
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    table th, table td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    table th {
+      background: #0056b3;
+      color: white;
+    }
+    table tr:hover {
+      background: #f1f9ff;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>Menu</h3>
+    <ul>
+      <li>Dashboard</li>
+      <li>Courses</li>
+      <li>Settings</li>
+      <li>Profile</li>
+    </ul>
+  </div>
+
+  <!-- Main section -->
+  <div class="main">
+    <h1>Faculty of Science and Technology</h1>
+    <h2>Muteesa Royal University</h2>
+    <p>Below is a table containing simple course data:</p>
+
+    <table>
+      <tr>
+        <th>Code</th>
+        <th>Course Name</th>
+        <th>Period</th>
+      </tr>
+      <tr>
+        <td>BCS</td>
+        <td>Computer Science</td>
+        <td>3 Years</td>
+      </tr>
+      <tr>
+        <td>BIT</td>
+        <td>Information Technology</td>
+        <td>3 Years</td>
+      </tr>
+      <tr>
+        <td>DIT</td>
+        <td>diploma in information technology for years</td>
+        <td>2Years</td>
+      </tr>
+      <tr>
+        <td>BEICT</td>
+        <td>bachelors of education with ICT</td>
+        <td>4 Years</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; <span id="year"></span> Muteesa Royal 1 University 
+  </footer>
+
+  <script>
+    // Automatically insert the current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
