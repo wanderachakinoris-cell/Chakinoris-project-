@@ -35,14 +35,14 @@
       width: 100px;
       background: #fff;
       border-right: 2px solid #ddd;
-      padding: 20px;
+      padding: 10px;
       position: fixed;
       top: 60px;
       bottom: 50px;
       box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     }
     .sidebar h3 {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       color: #0056b3;
     }
     .sidebar ul {
@@ -77,14 +77,14 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 30px;
+      margin-top: 20px;
       background: white;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       border-radius: 6px;
       overflow: hidden;
     }
     table th, table td {
-      padding: 12px;
+      padding: 8px;
       text-align: left;
       border-bottom: 1px solid #ddd;
     }
