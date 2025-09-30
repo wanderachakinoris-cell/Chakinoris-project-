@@ -32,7 +32,7 @@
 
     /* Sidebar */
     .sidebar {
-      width: 100px;
+      width: 130px;
       background: #fff;
       border-right: 2px solid #ddd;
       padding:0px;
@@ -64,7 +64,7 @@
     /* Main content */
     .main {
       margin-left: 5px;
-      padding: 0px;
+      padding: 5px;
     }
     .main h1 {
       color: #0056b3;
