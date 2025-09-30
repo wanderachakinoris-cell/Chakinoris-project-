@@ -1,173 +1,216 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Faculty of Science and Technology - MRU</title>
+  <title>Faculty Dashboard</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: #f5f7fa;
-      color: #222;
-    }
-
-    /* Navigation bar */
-    nav {
-      background: linear-gradient(to right, #0056b3, #007bff);
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    nav a {
-      margin: 0 20px;
-      text-decoration: none;
-      color: white;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: yellow;
-    }
-
-    /* Sidebar */
-    .sidebar {
-      width: 130px;
-      background: #fff;
-      border-right: 2px solid #ddd;
-      padding:0px;
-      position: fixed;
-      top: 60px;
-      bottom: 50px;
-      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-    }
-    .sidebar h3 {
-      margin-bottom: 10px;
-      color: #0056b3;
-    }
-    .sidebar ul {
-      list-style-type: none;
       padding: 0;
+      box-sizing: border-box;
     }
-    .sidebar ul li {
-      margin: 10px 0;
-      padding: 8px;
-      border-radius: 10px;
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #34495e;
+      padding: 1rem 2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Content Container */
+    .content-container {
+      display: flex;
+      flex: 1;
+    }
+
+    /* Sidebar Styles */
+    .sidebar {
+      width: 250px;
+      background-color: #ecf0f1;
+      padding: 2rem 1rem;
+      border-right: 2px solid #bdc3c7;
+    }
+
+    .sidebar h3 {
+      margin-bottom: 1.5rem;
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar li {
+      padding: 0.8rem 1rem;
+      margin-bottom: 0.5rem;
+      background-color: white;
+      border-radius: 5px;
       cursor: pointer;
-      transition: background 0.3s ease;
-    }
-    .sidebar ul li:hover {
-      background: #f0f8ff;
-      color: #0056b3;
+      transition: background-color 0.3s;
     }
 
-    /* Main content */
+    .sidebar li:hover {
+      background-color: #3498db;
+      color: white;
+    }
+
+    /* Main Content Styles */
     .main {
-      margin-left: 10px;
-      padding: 5px;
-    }
-    .main h1 {
-      color: #0056b3;
-    }
-    .main h2 {
-      color: #007bff;
+      flex: 1;
+      padding: 2rem;
+      background-color: #f8f9fa;
     }
 
-    /* Table */
+    .main h1 {
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+
+    .main h2 {
+      color: #7f8c8d;
+      margin-bottom: 1.5rem;
+      font-weight: normal;
+    }
+
+    .main p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    /* Table Styles */
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 10px;
-      background: white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      border-radius: 8px;
-      overflow: hidden;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    table th, table td {
-      padding: 8px;
+
+    th, td {
+      padding: 1rem;
       text-align: left;
       border-bottom: 1px solid #ddd;
     }
-    table th {
-      background: #0056b3;
+
+    th {
+      background-color: #34495e;
       color: white;
-    }
-    table tr:hover {
-      background: #f1f9ff;
     }
 
-    /* Footer */
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+
+    /* Footer Styles */
     footer {
-      background: #222;
+      background-color: #2c3e50;
       color: white;
       text-align: center;
-      padding: 15px;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      font-size: 14px;
+      padding: 1rem;
+      margin-top: auto;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation bar -->
+  <!-- Header -->
+  <header>
+    <div class="logo">MRU Faculty Portal</div>
+    <div>Welcome, User</div>
+  </header>
+
+  <!-- Navigation -->
   <nav>
     <a href="#">Home</a>
     <a href="#">About</a>
+    <a href="#">Services</a>
     <a href="#">Contact</a>
   </nav>
 
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <h3>Menu</h3>
-    <ul>
-      <li>Dashboard</li>
-      <li>Courses</li>
-      <li>Settings</li>
-      <li>Profile</li>
-    </ul>
-  </div>
+  <!-- Main Content Container -->
+  <div class="content-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h3>Menu</h3>
+      <ul>
+        <li>Dashboard</li>
+        <li>Courses</li>
+        <li>Settings</li>
+        <li>Profile</li>
+      </ul>
+    </div>
 
-  <!-- Main section -->
-  <div class="main">
-    <h1>Faculty of Science and Technology</h1>
-    <h2>Muteesa Royal University</h2>
-    <p>Below is a table containing simple course data:</p>
+    <!-- Main section -->
+    <div class="main">
+      <h1>Faculty of Science and Technology</h1>
+      <h2>Muteesa Royal University</h2>
+      <p>Below is a table containing simple course data:</p>
 
-    <table>
-      <tr>
-        <th>Code</th>
-        <th>Course Name</th>
-        <th>Period</th>
-      </tr>
-      <tr>
-        <td>BCS</td>
-        <td>Computer Science</td>
-        <td>3 Years</td>
-      </tr>
-      <tr>
-        <td>BIT</td>
-        <td>Information Technology</td>
-        <td>3 Years</td>
-      </tr>
-      <tr>
-        <td>DIT</td>
-        <td>diploma in information technology for years</td>
-        <td>2Years</td>
-      </tr>
-      <tr>
-        <td>BEICT</td>
-        <td>bachelors of education with ICT</td>
-        <td>4 Years</td>
-      </tr>
-    </table>
+      <table>
+        <tr>
+          <th>Code</th>
+          <th>Course Name</th>
+          <th>Period</th>
+        </tr>
+        <tr>
+          <td>BCS</td>
+          <td>Computer Science</td>
+          <td>3 Years</td>
+        </tr>
+        <tr>
+          <td>BIT</td>
+          <td>Information Technology</td>
+          <td>3 Years</td>
+        </tr>
+        <tr>
+          <td>DIT</td>
+          <td>Diploma in Information Technology</td>
+          <td>2 Years</td>
+        </tr>
+        <tr>
+          <td>BEICT</td>
+          <td>Bachelors of Education with ICT</td>
+          <td>4 Years</td>
+        </tr>
+      </table>
+    </div>
   </div>
 
   <!-- Footer -->
   <footer>
-    &copy; <span id="year"></span> Muteesa Royal 1 University 
+    &copy; <span id="year"></span> Muteesa Royal University 
   </footer>
 
   <script>
@@ -176,4 +219,4 @@
   </script>
 
 </body>
-</html>
+</html>    
