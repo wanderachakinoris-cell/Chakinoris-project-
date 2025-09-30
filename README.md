@@ -35,7 +35,7 @@
       width: 100px;
       background: #fff;
       border-right: 2px solid #ddd;
-      padding: 15px;
+      padding:0px;
       position: fixed;
       top: 60px;
       bottom: 50px;
@@ -64,7 +64,7 @@
     /* Main content */
     .main {
       margin-left: 5px;
-      padding: 10px;
+      padding: 0px;
     }
     .main h1 {
       color: #0056b3;
@@ -77,7 +77,7 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 20px;
+      margin-top: 10px;
       background: white;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       border-radius: 8px;
