@@ -50,9 +50,9 @@
       padding: 0;
     }
     .sidebar ul li {
-      margin: 18px 0;
+      margin: 10px 0;
       padding: 8px;
-      border-radius: 6px;
+      border-radius: 10px;
       cursor: pointer;
       transition: background 0.3s ease;
     }
@@ -63,8 +63,8 @@
 
     /* Main content */
     .main {
-      margin-left: 30px;
-      padding: 25px;
+      margin-left: 5px;
+      padding: 10px;
     }
     .main h1 {
       color: #0056b3;
@@ -80,7 +80,7 @@
       margin-top: 20px;
       background: white;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      border-radius: 6px;
+      border-radius: 8px;
       overflow: hidden;
     }
     table th, table td {
