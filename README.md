@@ -35,7 +35,7 @@
       width: 100px;
       background: #fff;
       border-right: 2px solid #ddd;
-      padding: 10px;
+      padding: 15px;
       position: fixed;
       top: 60px;
       bottom: 50px;
@@ -63,7 +63,7 @@
 
     /* Main content */
     .main {
-      margin-left: 300px;
+      margin-left: 30px;
       padding: 25px;
     }
     .main h1 {
